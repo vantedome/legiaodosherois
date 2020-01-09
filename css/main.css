@@ -1,0 +1,442 @@
+/* Css programado por Vanderlei Antedomenico Junior
+   Data: 28/10/2019 */
+
+
+/* Formatação geral */
+
+
+:root{
+    --textDestaque: #fff;
+    --textSecundario: #222;
+    --topoFundoUm: #112737;
+    --topoFundoDois: #274558;
+    --nomes: #ffff00;
+    --colorBorders: #00AAEF;
+}
+
+body{
+    background-color:#CBD2DE;
+}
+
+a{
+    text-decoration: none;
+    color: var(--textDestaque);
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* Header */
+
+header{
+    background-color: var(--topoFundoUm);
+}
+
+.logo{
+    display: none;
+}
+
+.mini-logo{
+    width: 50px;
+    padding-left: 10px;
+}
+
+.navigation{
+    background-color: var(--topoFundoDois);
+}
+
+.navigation .wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+nav{
+    position: absolute;
+    top: -270px;
+    width: 100%;
+    background-color: var(--topoFundoDois);
+    text-align: center;
+    transition: all .3s linear;
+    z-index: 0;
+}
+
+
+nav ul li a{
+    display: block;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+
+nav ul li:last-child{
+    padding-bottom: 20px;
+}
+
+
+
+.search-bar{
+    width: 200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.search-bar i{
+    line-height: 25px;
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.ul-aparecendo{
+    top: 50px;
+}
+
+.burger{
+    width: 40px;
+    height: 35px;
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+
+.burger div{
+    background-color: #fff;
+    width: 40px;
+    height: 5px;
+    margin: 5px 0;
+    transition: all .3s linear;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-7px, -6px);
+}
+
+
+/* Main */
+
+main h1{
+    display: none;
+}
+
+article{
+    margin-bottom: 30px;
+}
+
+article img{
+    width: 100%;
+}
+
+article h2{
+    background-color: #fff;
+    color: #aaa;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+    text-transform: uppercase;
+    margin-top: -2px;
+    border-bottom: 2px solid #000;
+}
+
+article div{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+article div a{
+    background-color: var(--colorBorders);
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.paginas{
+    width: 171px;
+    margin: 25px auto;
+    border-bottom: 2px solid #555;
+}
+
+.paginas a{
+    display: inline-block;
+    background-color: #fff;
+    color: var(--colorBorders);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin-left: -3px;
+}
+
+.paginas a:first-child{
+    background-color: var(--colorBorders);
+    color: #fff;
+}
+
+.paginas a:hover{
+    background-color: var(--colorBorders);
+    color: #fff;
+}
+
+.paginas a:first-child:hover{
+    cursor: default;
+}
+
+/* Aside */
+
+aside{
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+aside h2{
+    background-color: #ccc;
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside section div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 230px;
+    width: 450px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-image: url(../img/thumbs/img1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--colorBorders);
+}
+
+aside section div p{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.destaque-1{
+    background-image: url(../img/thumbs/img2.jpeg);
+}
+
+.destaque-2{
+    background-image: url(../img/thumbs/img3.jpeg);
+}
+
+.destaque-3{
+    background-image: url(../img/thumbs/img4.jpeg);
+}
+
+
+.caixa-postal{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--colorBorders);
+    margin: 10px;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.caixa-postal i{
+    font-size: 6em;
+}
+
+.caixa-postal div{
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cep{
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    background-color: var(--topoFundoDois);
+    padding: 30px 0;
+    color: #fff;
+    /* margin-top: 20px; */
+}
+
+footer img{
+    width: 50%;
+}
+
+footer p{
+    padding: 10px 0;
+}
+
+footer p a{
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+.sub-footer{
+    height: 80px;
+    background-color: var(--topoFundoUm);
+}
+
+@media screen and (min-width: 750px){
+
+    main h1{
+        display: block;
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+        margin: 20px 0;
+        background-color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        border-radius: 5px;
+        border-bottom: 2px solid #555;
+    }
+
+    article{
+        width: 650px;;
+        margin: 0 auto 30px;
+        
+    }
+
+    article img{
+        border-radius: 5px 5px 0 0;
+    }
+
+    article div{
+        border-radius: 0 0 5px 5px;
+        border-bottom: 2px solid #555;
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .wrapper{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .logo{
+        display: initial;
+        width: 250px;
+        height: 75px;
+    }
+
+    nav{
+        position: initial;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        top: 0;
+        height: 50px;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+    }
+    
+    ul li{
+        margin-left: 40px;
+    }
+
+    ul li:hover{
+        border-bottom: 5px solid rgb(154, 184, 240);
+        transition: border .2s linear;
+    }
+    
+    ul li:last-child{
+        margin-left: 150px;
+        padding-bottom: 0;
+    }
+
+    ul li:last-child:hover{
+        border: none;
+    }
+
+    .search-bar{
+        height: 25px;
+        background-color: #fff;
+        padding-left: 10px;
+        border-radius: 3px;
+}
+
+    .burger{
+        display: none;
+    }
+
+    .columns{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main{
+        width: 650px;
+    }
+
+    aside{
+        width: 300px;
+        height: 900px;
+    }
+
+    aside section div{
+        width: 250px;
+        height: 150px;
+    }
+
+    aside section div p{
+        font-size: 0.9em;
+        margin-top: 100px;
+    }
+
+    .caixa-postal i{
+        font-size: 4em;
+    }
+    
+    .caixa-postal div{
+        font-size: 1em;
+    
+        line-height: 1.5;
+    }
+    
+    footer .wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer .wrapper img{
+        width: 20%;
+    }
+}
+
+
